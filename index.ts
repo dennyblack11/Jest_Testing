@@ -62,5 +62,5 @@ export const deleteStockLogic = (
 createStockLogic(shop, stock);
 viewAllStocksLogic(shop);
 viewOneStockLogic(shop, 3);
-console.log(deleteStockLogic(shop, 4));
-console.log(viewAllStocksLogic(shop));
+updateOneStockLogic(shop, 4);
+deleteStockLogic(shop, 4);
