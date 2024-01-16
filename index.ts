@@ -22,6 +22,8 @@ export const createAttendanceLogic = (
   return value;
 };
 
+//view All Attendance Logic
+
 export const viewAllAttendanceLogic = (
   data: Array<{
     studentID: number;
@@ -35,6 +37,8 @@ export const viewAllAttendanceLogic = (
 }> => {
   return data;
 };
+
+//view One Attendance Logic
 
 export const viewOneAttendanceLogic = (
   data: Array<{
@@ -50,6 +54,8 @@ export const viewOneAttendanceLogic = (
 
   return getAttendance;
 };
+
+//Update One Attendance Logic
 
 export const updateOneAttendanceLogic = (
   data: Array<{
@@ -68,7 +74,6 @@ export const updateOneAttendanceLogic = (
 
 createAttendanceLogic(Attendance, addAttendance);
 viewAllAttendanceLogic(Attendance);
-console.log(viewOneAttendanceLogic(Attendance, 3));
-// viewAllStocksLogic(Attendance);
-// viewOneStockLogic(Attendance, 3);
-// console.log(updateOneStockLogic(Attendance, 4));
+viewOneAttendanceLogic(Attendance, 3);
+updateOneAttendanceLogic(Attendance, 3);
+console.log();

@@ -3,9 +3,6 @@ import {
   updateOneAttendanceLogic,
   viewAllAttendanceLogic,
   viewOneAttendanceLogic,
-  //   updateOneStockLogic,
-  //   viewAllStocksLogic,
-  //   viewOneStockLogic,
 } from "..";
 
 describe("checking index logic", () => {
